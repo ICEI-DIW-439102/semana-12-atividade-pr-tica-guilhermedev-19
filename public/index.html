@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Catálogo de Filmes · TMDB</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Archivo:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <div class="marquee-bar" aria-hidden="true">
+    <div class="marquee-track">
+      <span>★ AGORA EM CARTAZ ★ CATÁLOGO TMDB ★ SESSÃO CONTÍNUA ★ AGORA EM CARTAZ ★ CATÁLOGO TMDB ★ SESSÃO CONTÍNUA ★</span>
+    </div>
+  </div>
+
+  <header class="header">
+    <div class="header__inner">
+      <p class="eyebrow">Sessão nº 001 — Popularidade</p>
+      <h1 class="title">Catálogo de Filmes</h1>
+      <p class="subtitle">Busque por título e monte sua sessão. Dados ao vivo direto do The Movie DB.</p>
+    </div>
+  </header>
+
+  <main>
+    <section class="search-bar" role="search">
+      <label for="search" class="visually-hidden">Buscar filme</label>
+      <input
+        id="search"
+        type="text"
+        placeholder="Buscar filme… (ex: Duna, Matrix, Oppenheimer)"
+        autocomplete="off"
+      />
+      <button id="btnSearch" type="button">Buscar</button>
+    </section>
+
+    <p id="message" class="message" role="status"></p>
+
+    <section id="movie-list" class="movie-list" aria-live="polite"></section>
+  </main>
+
+  <footer class="footer">
+    <p>Dados fornecidos por The Movie DB · Projeto de estudo — Fetch API</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
